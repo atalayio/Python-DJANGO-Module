@@ -1,0 +1,198 @@
+.icerik{
+    padding: 40px;
+}
+.icerik-alt {
+    width: fit-content;
+    margin: auto;
+}
+.icerik-alt::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.hesaplama {
+    width: fit-content;
+    float: left;
+}
+.diger {
+    float: left;
+    width: fit-content;
+}
+/******************/
+.hesap {
+    width: 750px;
+    background-color: #151515;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 6px;
+}
+#hesap-baslik {
+    color: white;
+    margin: 20px 0px;
+}
+.hesap-tablo td{
+    padding: 8px 0px;
+}
+/******************/
+.sonuc {
+    width: 750px;
+    background-color: #151515;
+    padding: 30px;
+    border-radius: 6px;
+    margin: 20px;
+}
+#sonuc-baslik {
+    color: white;
+    margin: 20px 0px;
+}
+#sonuc-altbaslik {
+    color: white;
+}
+#sonuc-aciklama {
+    color: white;
+    margin: 20px 0px;
+}
+/*******************/
+.onerilen {
+    background-color: #151515;
+    width: 350px;
+    padding: 30px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 0px;
+}
+.onerilen-baslik {
+    color: white;
+    margin: 20px 0px;
+    text-align: center;
+}
+.onerilen-cizgi {
+    height: 1px;
+    background-color: #353535;
+    margin: 10px 0px;
+}
+.onerilen-link {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+.onerilen-link:hover {
+    color: rgb(79, 79, 79);
+}
+/*******************/
+.iletisim {
+    background-color: #151515;
+    width: 350px;
+    padding: 30px;
+    border-radius: 6px;
+    margin: 20px 20px 20px 0px;
+}
+.iletisim-baslik {
+    color: white;
+    margin: 20px 0px;
+    text-align: center;
+}
+.iletisim-cizgi {
+    height: 1px;
+    width: 75%;
+    background-color: #353535;
+    margin: 10px auto;
+}
+.iletisim-imgs {
+    width: fit-content;
+    margin: auto;
+}
+.iletisim-img {
+    width: 40px;
+    margin: 10px 10px;
+}
+.iletisim-paragraf {
+    color: white;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+
+/**********RESPONSİVE***************/
+
+
+@media screen and (max-width:900px) {
+    .icerik{
+        padding: 0px;
+        margin: auto;
+    }
+    .icerik-alt {
+        width: fit-content;
+        margin: auto;
+    }
+    .icerik-alt::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .hesaplama {
+        width: fit-content;
+        float: none;
+        margin: auto;
+    }
+    .diger {
+        float: none;
+        margin: auto;
+        width: fit-content;
+    }
+    /******************/
+    .hesap {
+        width: 750px;
+        border-radius: 6px;
+    }
+    #hesap-baslik {
+        font-size: 40px;
+    }
+    .hesap-tablo td{
+        padding: 8px 0px;
+    }
+    /******************/
+    .sonuc {
+        width: 750px;
+    }
+    #sonuc-baslik {
+        font-size: 40px;
+    }
+    #sonuc-altbaslik {
+        font-size: 30px;
+    }
+    #sonuc-aciklama {
+        font-size: 20px;
+    }
+    /*******************/
+    .onerilen {
+        width: 600px;
+        margin: 20px 20px 20px 20px;
+    }
+    .onerilen-baslik {
+        font-size: 40px;
+    }
+    .onerilen-cizgi {
+        margin: 20px 0px;
+    }
+    .onerilen-link {
+        font-size: 30px;
+    }
+    /*******************/
+    .iletisim {
+        width: 600px;
+        margin: 20px 20px 20px 20px;
+    }
+    .iletisim-baslik {
+        font-size: 40px;
+    }
+    .iletisim-cizgi {
+        margin: 20px auto;
+    }
+    .iletisim-img {
+        width: 70px;
+        margin: 10px 10px;
+    }
+    .iletisim-paragraf {
+        font-size: 30px;
+    }
+}

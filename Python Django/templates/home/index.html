@@ -1,0 +1,71 @@
+{% extends "base/base.html" %}
+
+
+
+
+
+    {% block content %}
+    <!DOCTYPE html>
+    <html lang="tr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hesaplar.net - Düşünmeden Hesapla.</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/icerik.css' %}">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="icon" href="{% static 'img/icon.png' %}" type="image/x-icon" />
+    </head>
+    
+    <body>
+           
+        <!--içerik-->
+        <div class="banner">
+            <p class="text1">hesaplar.net <br> <span>"düşünmeden hesapla"</span></p>
+            <div class="banner-cizgi"></div>
+            <div class="iletisim2">
+                <h2 class="iletisim-baslik">Öneri ve Görüşleriniz için</h2>
+                <p class="iletisim-paragraf">Hesaplama araçlarımızı geliştirmek için sizden gelen öneri ve görüşleri önemsiyoruz.
+                    Fikir, öneri ve güncellemeler için bizlere sosyal medya adreslerimiz aracılığıyla ulaşabilirsiniz.
+                </p>
+                <div class="iletisim-imgs">
+                    <a href="https://www.instagram.com"><img class="footer-img" src="{% static 'img/instagram.png' %}"></a>
+            <a href="https://www.facebook.com"><img class="footer-img" src="{% static 'img/facebook.png' %}"></a>
+            <a href="https://www.twitter.com"><img class="footer-img" src="{% static 'img/twitter.png' %}"></a>
+                </div>
+            </div>
+            <div class="onerilen2">
+                <h2 class="onerilen2-baslik">Önerilen Hesaplamalar</h2>
+                <table class="onerilen2-tablo">
+                    <tr>
+                        <td><a class="onerilen-link" href="{% url 'yuzde' %}">Yüzde Hesaplama</a></td>
+                        
+                        <td><a class="onerilen-link" href="{% url 'vucutk' %}">Vücut Kitle İndeksi Hesaplama</a></td>
+                        <td><a class="onerilen-link" href="{% url 'kdv' %}">KDV Hesaplama</a></td>
+                        <td><a class="onerilen-link" href="{% url 'alan' %}">Alan Hesaplama</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="onerilen-link" href="{% url 'obph' %}">OBP Hesaplama</a></td>
+                        <td><a class="onerilen-link" href="{% url 'damgavergi' %}">Damga Vergisi Hesaplama</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="onerilen-link" href="{% url 'jana' %}">Jana Sınav Puanı Hesaplama</a></td>
+                        <td><a class="onerilen-link" href="{% url 'noth' %}">Not Hesaplama</a></td>
+                        <td><a class="onerilen-link" href="{% url 'stopaj' %}">Net Kira Stopaj Hesaplama</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+       
+    </body>
+    
+    </html>
+
+    {% endblock %}
+
+
+     

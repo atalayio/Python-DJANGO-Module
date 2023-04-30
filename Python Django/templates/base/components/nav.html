@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+  <link rel="stylesheet" href="{% static 'js/header.js' %}">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn"  class="top-btn">&#129093;</button>
+    <div class="topnav" id="myTopnav">
+        <a href="{% url 'index' %}" class="active">Hesaplar.net</a>
+        <div class="dropdown">
+          <button class="dropbtn">Sağlık  <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="{% url 'vucutk' %}">Vücut Kitle İndeksi Hesaplama</a>
+            <a href="{% url 'su' %}">Su İhtiyacı Hesaplama</a>
+            <a href="{% url 'creatin' %}">Creatin İhtiyacı Hesaplama</a>
+            <a href="{% url 'vucuty' %}">Vücut Yüzeyi Hesaplama</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Matematik  <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="{% url 'inc' %}">İnç Hesaplama</a>
+            <a href="{% url 'indirim' %}">İndirim Hesaplama</a>
+            <a href="{% url 'yuzde' %}">Yüzde Hesaplama</a>
+            <a href="{% url 'zam' %}">Zam Hesaplama</a>
+            <a href="{% url 'alan' %}">Alan Hesaplama</a>
+            <a href="{% url 'uslus' %}">Üslü Sayı Hesaplama</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Eğitim  <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="{% url 'noth' %}">Not Hesaplama</a>
+            <a href="{% url 'mezuniyet' %}">Mezuniyet Puanı Hesaplama</a>
+            <a href="{% url 'obph' %}">OBP Hesaplama</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Sınav  <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="{% url 'ehliyet' %}">Ehliyet Sınavı Sonucu Hesaplama</a>
+            <a href="{% url 'yds' %}">YDS Sonucu Hesaplama</a>
+            <a href="{% url 'aks' %}">AKTS Puanı Hesaplama</a>
+            <a href="{% url 'dibsinav' %}">DİB MBSTS Puanı Hesaplama</a>
+            <a href="{% url 'jana' %}">Jana Sınav Puanı Hesaplama</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Vergi  <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="{% url 'kdv' %}">KDV Hesaplama</a>
+            <a href="{% url 'kombiya' %}">Kombiya Hesaplama</a>
+            <a href="{% url 'kurumlar' %}">Kurumlar Vergisi Hesaplama</a>
+            <a href="{% url 'damgavergi' %}">Damga Vergisi Hesaplama</a>
+            <a href="{% url 'stopaj' %}">Net Kira Stopaj Hesaplama</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Diğer  <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="{% url 'sigara' %}">Sigara Maliyet Hesaplama</a>
+          </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+.banner {
+    padding: 30px;
+}
+.text1 {
+    color: white;
+    display: block;
+    width: fit-content;
+    padding: 30px 75px;
+    margin-top: 200px;
+    border: 2px solid white;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    border-radius: 15px;
+}
+.text1 span {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+}
+.banner-cizgi {
+    height: 1px;
+    background-color: #606060;
+    width: 85%;
+    margin: 25px auto 80px auto;
+}
+.iletisim2 {
+    width: 60%;
+    margin: auto;
+}
+.onerilen2-baslik {
+    font-size: 25px;
+    color: white;
+    padding-left: 110px;
+    margin-top: 60px;
+}
+.onerilen2-tablo {
+    margin: 50px auto;
+    font-size: 25px;
+}
+.onerilen2-tablo td {
+    padding: 10px 50px;
+}

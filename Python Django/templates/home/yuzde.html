@@ -1,0 +1,111 @@
+{% extends "base/base.html" %}
+
+    {% block content %}
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/icerik.css' %}">
+    <link rel="stylesheet" href="{% static 'css/input.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'img/icon.png' %}" type="image/x-icon" />
+    
+    <title>Yüzde Hesaplama</title>
+</head>
+<body>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="icerik">
+            <div class="icerik-alt">
+                <div class="hesaplama">
+                    <div class="hesap">
+                        <h2 id="hesap-baslik">Yüzde Hesaplama</h2>
+                        <table class="hesap-tablo">
+                            <tr>
+                                <td>
+                                    <label>Sayı*</label><br>
+                                    <input class="a" type="text" name="num1" id="" value="{{n1}}">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Yüzde(%)*</label><br>
+                                    <input class="a" type="text" name="num2" id=""  value="{{n2}}">
+                            </tr>
+                           
+                            <tr>
+                                <td>
+                                    <button class="c">Hesapla</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="sonuc">
+                        <h2 id="sonuc-baslik">Yüzde Hesaplama</h2>
+                        <h3 id="sonuc-altbaslik"></h3>
+                        <p id="sonuc-aciklama">{{a}}
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="diger">
+                    <div class="onerilen">
+                        <h2 class="onerilen-baslik">Önerilen Hesaplamalar</h2>
+                        <a class="onerilen-link" href="{% url 'yuzde' %}">Yüzde Hesaplama</a>
+                        <div class="onerilen-cizgi"></div>
+                        <a class="onerilen-link" href="{% url 'vucutk' %}">Vücut Kitle İndeksi Hesaplama</a>
+                        <div class="onerilen-cizgi"></div>
+                        <a class="onerilen-link" href="{% url 'kdv' %}">KDV Hesaplama</a>
+                        <div class="onerilen-cizgi"></div>
+                        <a class="onerilen-link" href="{% url 'sigara' %}">Sigara Maliyet Hesaplama</a>
+                        <div class="onerilen-cizgi"></div>
+                        <a class="onerilen-link" href="{% url 'alan' %}">Alan Hesaplama</a>
+                        <div class="onerilen-cizgi"></div>
+                        <a class="onerilen-link" href="{% url 'indirim' %}">İndirim Hesaplama</a>
+                        <div class="onerilen-cizgi"></div>
+                        <a class="onerilen-link" href="{% url 'obph' %}">OBP Hesaplama</a>
+                    </div>
+                    <div class="iletisim">
+                        <h2 class="iletisim-baslik">Öneri ve Görüşleriniz için</h2>
+                        <p class="iletisim-paragraf">Hesaplama araçlarımızı geliştirmek için sizden gelen öneri ve görüşleri önemsiyoruz.
+                            Fikir, öneri ve güncellemeler için bizlere sosyal medya adreslerimiz aracılığıyla ulaşabilirsiniz.
+                        </p>
+                        <div class="iletisim-cizgi"></div>
+                        <div class="iletisim-imgs">
+                            <a href="https://www.instagram.com"><img class="footer-img" src="{% static 'img/instagram.png' %}"></a>
+                            <a href="https://www.facebook.com"><img class="footer-img" src="{% static 'img/facebook.png' %}"></a>
+                            <a href="https://www.twitter.com"><img class="footer-img" src="{% static 'img/twitter.png' %}"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+    {% endblock %}
+
+
+
+
+
+

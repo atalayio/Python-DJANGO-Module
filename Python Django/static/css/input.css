@@ -1,0 +1,38 @@
+label {
+    display: inline-block;
+    color: white;
+    margin: 3px 0px;
+}
+.a {
+    color: white;
+    margin: 3px 0px;
+    width: 330px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    border: 2px solid #3d3f41;
+    border-radius: 4px;
+    background-color: #101010;
+}
+.a:focus {
+    border: 2px solid #274786;
+}
+.b {
+    margin: 3px 0px;
+}
+.c {
+    margin: 3px 0px;
+    height: 40px; 
+    width: 90px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.c:hover {
+    background-color: #3d3f41;
+}

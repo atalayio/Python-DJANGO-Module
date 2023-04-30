@@ -1,0 +1,116 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+   
+
+    <!--css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+  
+    
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'css/icerik.css' %}">
+    <link rel="stylesheet" href="{% static 'css/input.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+   
+    <!--içerik-->
+    <form method="post">
+        {% csrf_token %}
+    <div class="icerik">
+        <div class="icerik-alt">
+            <div class="hesaplama">
+                <div class="hesap">
+                    <h2 id="hesap-baslik">Hesaplama Başlığı</h2>
+                    <table class="hesap-tablo">
+                        <tr>
+                            <td>
+                                <label>Başlık</label><br>
+                                <input class="a" type="text" name="num1" id="" value="{{n1}}" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Başlık</label><br>
+                                <input class="a" type="number" id="quantity" name="num2" min="1" max="5" value="{{n2}}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Başlık</label><br>
+                                <select class="a" name="cars" id="cars">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="b" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> I have a bike</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="b" type="radio" id="html" name="fav_language" value="HTML">
+                                <label for="html">HTML</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="c">Tıkla</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sonuc">
+                    <h2 id="sonuc-baslik">Hesaplama Sonucu Başlık</h2>
+
+                    <h3 id="sonuc-altbaslik" >{{c}}</h3>
+
+                    <p id="sonuc-aciklama">
+                        Hesaplama sonucu açıklama yazısı Hesaplama sonucu açıklama yazısı Hesaplama sonucu açıklama
+                        yazısı Hesaplama sonucu açıklama yazısı Hesaplama sonucu açıklama yazısı
+                        Hesaplama sonucu açıklama yazısı Hesaplama sonucu açıklama yazısı
+                    </p>
+                </div>
+            </div>
+            <div class="diger">
+                <div class="onerilen">
+                    <h2 class="onerilen-baslik">Önerilen Hesaplamalar</h2>
+                    <a class="onerilen-link" href="{% url 'yuzde' %}">Yüzde Hesaplama</a>
+                    
+                    <div class="onerilen-cizgi"></div>
+                    <a class="onerilen-link" href="{% url 'vucutk' %}">Vücut Kitle İndeksi Hesaplama</a>
+                    <div class="onerilen-cizgi"></div>
+                    <a class="onerilen-link" href="{% url 'kdvhesap' %}">KDV Hesaplama</a>
+                    <div class="onerilen-cizgi"></div>
+                    <a class="onerilen-link" href="">Hesaplama</a>
+                    <div class="onerilen-cizgi"></div>
+                    <a class="onerilen-link" href="{% url 'alanhesap' %}">Alan Hesaplama</a>
+                    <div class="onerilen-cizgi"></div>
+                    <a class="onerilen-link" href="">Hesaplama</a>
+                    <div class="onerilen-cizgi"></div>
+                    <a class="onerilen-link" href="{% url 'obph' %}">OBP Hesaplama</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</form>
+    
+</body>
+
+</html>
+
+{% endblock %}
